@@ -1,0 +1,60 @@
+<form action="welcome.html" target="_blank">
+    <head>
+        <title>Form Login</title>
+    </head>
+    <body style="background-color: darkcyan">
+    <fieldset>
+        <legend><b>Silakan Isi Dengan Data Pribadi</b></legend>
+        <p>
+            <label>
+            Nama Depan:<br>
+            <input type="text" name="firstname" /> <br>
+            </label><br>
+            <label>
+            Nama Belakang:<br>
+            <input type="text" name="lastname" />
+            </label>
+        </p>
+        <p>
+            <label for="gender">Jenis Kelamin:<br></label>
+            <input id="laki-laki-radio" type="radio" name="gender" value="laki-laki">
+            <label for="laki-laki-radio">Laki-Laki</label>
+            <input id="perempuan-radio" type="radio" name="gender" value="perempuan">
+            <label for="perempuan-radio">Perempuan</label><br>
+        </p>
+        <p>
+            <label>
+                Tanggal Lahir<br>
+            <input type="date" name="birthday"><br>
+            </label>
+        </p>
+        <p>
+            <label for="instansi">Asal Instansi</label><br>
+            <input type="text" name="instansi" list="ListIntansi" />
+            <datalist id="ListIntansi">
+              <select name="altListIntansi">
+                <option value="Direkorat PG Dikdas">
+                <option value="Direkorat PG Dikmen">
+                <option value="Direkorat PGTK PAUD">
+                <option value="Direkorat Tendik">
+                <option value="Sekretariat GTK">    
+              </select>
+            </datalist> 
+        </p>    
+        <p>
+            <label>
+                Alamat Email<br>
+                <input type="email" name="email"><br>
+                </label>
+        </p>
+        <p>
+            <label>
+                Nomor Handphone<br>
+            <input type="text" name="Handphone"><br>
+            </label>
+            </p>
+    </fieldset><br>
+    </body>
+    <input type="submit" value="Kirim" />
+    <input type="reset">
+  </form>
